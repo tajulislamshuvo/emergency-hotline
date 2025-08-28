@@ -6,6 +6,7 @@ for (const heart of heartBtn) {
     heartNumber = heartNumber + 1;
 
     document.querySelector('.heart-number').innerText = heartNumber;
+    heart.style.color = 'red';
     // document.getElementById('')
   })
 }
@@ -66,7 +67,6 @@ const copyBtn = document.querySelectorAll('.copy-btn');
 
 let copyNumber = Number(document.querySelector('.copy-number').innerHTML);
 for (const copy of copyBtn) {
-  console.log(copy);
   copy.addEventListener('click', async function () {
     const callNumber = copy.parentNode.parentNode.children[3].innerText;
     await navigator.clipboard.writeText(callNumber);
