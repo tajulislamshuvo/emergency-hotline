@@ -4,3 +4,8 @@ body {
   font-family: "Hind Madurai", sans-serif;
   overflow-x: hidden;
 }
+
+.call-btn,
+.copy-btn {
+  border-radius: 8px;
+}
